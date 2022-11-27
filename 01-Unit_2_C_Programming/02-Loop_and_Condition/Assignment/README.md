@@ -1,4 +1,4 @@
-# Assignment 1
+# Assignment 2
 ## EX1:
 ![EX1!](../Assignment_2/media/EX1.PNG)
 
