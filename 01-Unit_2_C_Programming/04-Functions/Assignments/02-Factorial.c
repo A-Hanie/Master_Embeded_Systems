@@ -20,7 +20,7 @@ void main(void)
 
 int factorial(unsigned int num)
 {
-    if (1 == num)
+    if (0 == num)
     {
         return 1;
     }
