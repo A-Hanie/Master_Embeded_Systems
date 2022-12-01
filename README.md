@@ -1,1 +1,1 @@
-# Embeded_system_online_diploma
+# Master_Embeded_system_online
