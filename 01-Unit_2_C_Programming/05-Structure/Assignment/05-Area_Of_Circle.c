@@ -14,7 +14,7 @@
 void main(void)
 {
     float reduis;
-printf("Enter Circle Redius : ");
-scanf("%f", &reduis);
-printf("The Area of the circule = %0.2f  unit^2",CIRCLE_AREA(reduis));
+    printf("Enter Circle Redius : ");
+    scanf("%f", &reduis);
+    printf("The Area of the circule = %0.2f  unit^2",CIRCLE_AREA(reduis));
 }
