@@ -26,9 +26,9 @@ typedef struct
 
 int main ()
 {
-	printf ("Size of the int is: %d", sizeof (int));				//	4 Byte
-	printf ("\nSize of the float is: %d", sizeof (float));			//	4 Byte
-	printf ("\nSize of the union is: %d", sizeof (union_t));		//	32 Byte
+	printf ("Size of the int is: %d", sizeof (int));		//	4 Byte
+	printf ("\nSize of the float is: %d", sizeof (float));		//	4 Byte
+	printf ("\nSize of the union is: %d", sizeof (union_t));	//	32 Byte
 	printf ("\nSize of the structure is: %d", sizeof (struct_t));	//	32+4+4 = 40 Byte ||
 
 	return 0;
