@@ -9,7 +9,7 @@
 
 #define     MATH_PI             3.14
 
-# define    CIRCLE_AREA(r)      (MATH_PI* r*r)
+#define    CIRCLE_AREA(r)      (MATH_PI* r*r)
 
 void main(void)
 {
