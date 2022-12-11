@@ -60,4 +60,8 @@ $ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 ```MEMORY``` : Command used to describe the location, size and authority of memory in the target, and define memory regions may be used by the linker. <br />
 ```SECTIONS``` : Command tells the linker how to map input sections into output sections in other words how merge the input sections to the output sections. <br />
 
-Note : We will define one memory Mem location for simplicity sake.
+## Expressions in linker scripts
+```.``` : dot variable always contains the current output location counter. calculate address automatically.
+
+
+Note : We will define one memory (Mem) location for simplicity sake.
