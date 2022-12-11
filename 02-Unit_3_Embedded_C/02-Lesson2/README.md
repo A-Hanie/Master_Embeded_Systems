@@ -44,7 +44,7 @@ To generate object file from assembly code write:
 $ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 ```
 ## 3 Linker script
-## Linker script commands
+### Linker script commands
 - ENTRY
 - MEMORY
 - SECTIONS
@@ -60,7 +60,7 @@ $ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 ```MEMORY``` : Command used to describe the location, size and authority of memory in the target, and define memory regions may be used by the linker. <br />
 ```SECTIONS``` : Command tells the linker how to map input sections into output sections in other words how merge the input sections to the output sections. <br />
 
-## Expressions in linker scripts
+### Expressions in linker scripts
 ```.``` : dot variable always contains the current output location counter. address is calculate automatically by each section size.
 
 
