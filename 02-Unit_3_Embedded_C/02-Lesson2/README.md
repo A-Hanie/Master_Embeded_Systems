@@ -61,7 +61,7 @@ $ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 ```SECTIONS``` : Command tells the linker how to map input sections into output sections in other words how merge the input sections to the output sections. <br />
 
 ## Expressions in linker scripts
-```.``` : dot variable always contains the current output location counter. calculate address automatically.
+```.``` : dot variable always contains the current output location counter. address is calculate automatically by each section size.
 
 
 Note : We will define one memory (Mem) location for simplicity sake.
