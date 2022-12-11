@@ -67,3 +67,8 @@ $ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 Note : We will define one memory (Mem) location for simplicity sake.
 
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/linkerscript.PNG?raw=true)
+
+To link all together use (arm-none-eabi-ld.exe) build tool as following
+```
+$ arm-none-eabi-ld.exe -T linker_script.ld app.o uart.o startup.o -o output.elf
+```
