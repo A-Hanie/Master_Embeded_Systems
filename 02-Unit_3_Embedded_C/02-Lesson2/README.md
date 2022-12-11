@@ -35,6 +35,17 @@ $ arm-none-eabi-objdump.exe -h uart.o
 ```
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/uart_sec_headers.PNG?raw=true)
 
+also we can display objects symbole by writing:
+```
+$ arm-none-eabi-nm.exe app.o
+```
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/app_symbole.PNG?raw=true)
+
+```
+$ arm-none-eabi-nm.exe uart.o
+```
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/uart_symbole.PNG?raw=true)
+
 ## 2 Write startup code
 Now we will write simple startup code in asmbly just will intialize Stack Pointer then branch to main function.
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/startup.PNG?raw=true)
