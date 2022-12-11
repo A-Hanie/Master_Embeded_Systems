@@ -24,7 +24,7 @@ To generate object file we need to specify the micro controller processor in our
 $ arm-none-eabi-gcc.exe -c -mcpu=arm926ej-s -I . app.c -o app.o
 $ arm-none-eabi-gcc.exe -c -mcpu=arm926ej-s -I . uart.c -o uart.o
 ```
-We can display header sction using (arm-none-eabi-objdump.exe) binary utility, use -h to display sections header or -D to display assmbly of sections.
+We can use (arm-none-eabi-objdump.exe) binary utility, -h to display sections header or -D to display assmbly of sections.
 ```
 $ arm-none-eabi-objdump.exe -h app.o
 ```
@@ -72,3 +72,10 @@ To link all together use (arm-none-eabi-ld.exe) build tool as following
 ```
 $ arm-none-eabi-ld.exe -T linker_script.ld app.o uart.o startup.o -o output.elf
 ```
+To display headers of sections of the output file :
+````
+$ arm-none-eabi-objdump.exe -h output.elf
+````
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/output_sections.PNG?raw=true)
+
+
