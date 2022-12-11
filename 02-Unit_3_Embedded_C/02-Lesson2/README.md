@@ -1,6 +1,6 @@
 # Lab1
 ## Lab objective
-To write startup and linker script from scratch, and send array of characters via uart.
+To write simple startup and linker script from scratch, and send array of characters via uart.
 
 ## Software requirements
 - GNU ARM Cross-ToolChain
@@ -43,3 +43,21 @@ To generate object file from assembly code write:
 ```
 $ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 ```
+## 3 Linker script
+## Linker script commands
+- ENTRY
+- MEMORY
+- SECTIONS
+- Location counter
+- Section: {....}>(vma) @>(lma)
+- Symbols
+- ALIGN
+- KEEP
+- INPUT
+- OUTPUT
+
+```ENTRY``` : Command used to define entry point, and it is not mandatory just used to make the linker script easier to understand. <br />
+```MEMORY``` : Command used to describe the location, size and authority of memory in the target, and define memory regions may be used by the linker. <br />
+```SECTIONS``` : Command tells the linker how to map input sections into output sections in other words how merge the input sections to the output sections. <br />
+
+Note : We will define one memory Mem location for simplicity sake.
