@@ -79,10 +79,11 @@ Note : We will define one memory (Mem) location for simplicity sake.
 
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/ls.PNG?raw=true)
 
-To link all together use (arm-none-eabi-ld.exe) build tool as following
+To link all together and generate map file use (arm-none-eabi-ld.exe) build tool as following
 ```
-$ arm-none-eabi-ld.exe -T linker_script.ld app.o uart.o startup.o -o output.elf
+$ arm-none-eabi-ld.exe -T linker_script.ld app.o uart.o startup.o -o output.elf -Map=Map_file.map
 ```
+
 To display headers of sections of the output file :
 ````
 $ arm-none-eabi-objdump.exe -h output.elf
@@ -95,4 +96,14 @@ $ arm-none-eabi-nm.exe output.elf
 ```
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/output_symbole.PNG?raw=true)
 
+Now we will generate the binary file
+```
+$ arm-none-eabi-objcopy.exe -O binary output.elf output.bin
+```
+
+Finally, to run the program in the QEMU Simulator "VersatilePB board"
+```
+$ qemu-system-arm -M versatilepb -m 128M -nographic -kernel output.bin
+```
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/simulation.PNG?raw=true)
 
