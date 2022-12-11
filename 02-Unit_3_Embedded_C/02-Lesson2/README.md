@@ -18,7 +18,6 @@ Write uart driver is not the main objective of this lab so we will just write si
 In the main function we just call vUart_Send_string function to send Zelda.
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/app_c.PNG?raw=true)
 
-## 2 Generate object files
 To generate object file we need to specify the micro controller processor in our case is arm926ej-s.
 
 ```
@@ -35,3 +34,12 @@ $ arm-none-eabi-objdump.exe -h app.o
 $ arm-none-eabi-objdump.exe -h uart.o
 ```
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/uart_sec_headers.PNG?raw=true)
+
+## 2 Write startup code
+Now we will write simple startup code in asmbly just will intialize Stack Pointer then branch to main function.
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/startup_code.PNG?raw=true)
+
+To generate object file from assembly code write:
+```
+$ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
+```
