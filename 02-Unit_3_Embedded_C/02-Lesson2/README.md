@@ -29,6 +29,9 @@ We can display header sction using (arm-none-eabi-objdump.exe) binary utility, u
 ```
 $ arm-none-eabi-objdump.exe -h app.o
 ```
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/app_sec_headers.PNG?raw=true)
+
 ```
 $ arm-none-eabi-objdump.exe -h uart.o
 ```
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/uart_sec_headers.PNG?raw=true)
