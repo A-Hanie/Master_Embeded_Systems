@@ -65,3 +65,5 @@ $ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 
 
 Note : We will define one memory (Mem) location for simplicity sake.
+
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/linkerscript.PNG?raw=true)
