@@ -89,4 +89,10 @@ $ arm-none-eabi-objdump.exe -h output.elf
 ````
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/output_sections.PNG?raw=true)
 
+We can display objects symbole after resolving by writing:
+```
+$ arm-none-eabi-nm.exe output.elf
+```
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/02-Lesson2/Media/output_symbole.PNG?raw=true)
+
 
