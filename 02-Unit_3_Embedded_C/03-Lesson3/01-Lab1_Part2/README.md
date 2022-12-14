@@ -14,3 +14,17 @@ $ arm-none-eabi-objcopy.exe -O binary output.elf output.bin
 As we see here the debug sections are generated
 
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic1.png?raw=true)
+
+## 2 Debug the code
+
+Notice that QEMU implements a gbd connector using a TCP, we will use ```-S``` option command-line switch prevents the CPU from starting. This gives the debugging tool time to connect and allows debugging to begin from the start.
+```
+$ qemu-system-arm -M versatilepb -m 128M -nographic -s -S -kernel output.elf
+```
+
+To run gdb open anther terminal and write:
+```
+$ arm-none-eabi-gdb.exe output.elf
+```
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic2.png?raw=true)
+
