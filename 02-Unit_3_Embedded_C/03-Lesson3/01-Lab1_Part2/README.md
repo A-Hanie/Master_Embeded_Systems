@@ -50,8 +50,7 @@ To step instruction use  ```(gdb) si```
 
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic5.png?raw=true)
 
-To continue type ```(gdb) c``` we expect that the execution will stop at the main function.<br />
-![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic6.png?raw=true)
 
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/debugZelda.gif?raw=true)
 
 
