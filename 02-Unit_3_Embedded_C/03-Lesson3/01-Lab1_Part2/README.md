@@ -40,3 +40,14 @@ Now we can go through code to analyze an app's state and observe its execution f
 
 For example one of the most useful command is ```(gdb) display/3i $pc``` to desplay the program counter
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic4.png?raw=true)
+
+To set break Point at certian part use ```b```, example:  ```(gdb) b main``` to set break point at main function.<br />
+To step instruction use  ```(gdb) si```
+
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic5.png?raw=true)
+
+To continue type ```(gdb) c``` we expect that the execution will stop at the main function<br />
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic6.png?raw=true)
+
+
+
