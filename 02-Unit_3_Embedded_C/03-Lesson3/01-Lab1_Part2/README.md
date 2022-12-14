@@ -28,3 +28,12 @@ $ arm-none-eabi-gdb.exe output.elf
 ```
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic2.png?raw=true)
 
+once you see this message that mean the debugger able to understand debug symble for this image.
+Now to connect gdb with our target we need to give gdb our IP which is localhost, and IP address of the target which is 1234 as memtioned in QEMU wiki
+```
+(gdb) target remote localhost:1234
+```
+As you see here the processor begin with reset section of startup @ 0x1000 to intialize stack_top
+![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic3.png?raw=true)
+
+Now we can go through code to analyze an app's state and observe its execution flow. [Check this cheatSheet.](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf)
