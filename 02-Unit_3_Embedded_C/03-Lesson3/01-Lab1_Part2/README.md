@@ -46,7 +46,7 @@ To display break points in your code type ```(gdb) info breakpoint```.<br />
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic7.png?raw=true)
 
 
-To step instruction use  ```(gdb) si```
+To step an instruction use  ```(gdb) si```
 
 ![alt text](https://github.com/A-Hanie/Master_Embeded_Systems/blob/main/02-Unit_3_Embedded_C/03-Lesson3/media/pic5.png?raw=true)
 
