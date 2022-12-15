@@ -2,7 +2,7 @@
 ## Lab objective
 To write simple startup and linker script from scratch, and send array of characters via uart.
 
-## Software requirements
+## Software Tools
 - GNU ARM Cross-ToolChain
 - Qemu (to emulate ARM Versatile Platform Baseboard)
 ## 1 Create Lab files
