@@ -1,4 +1,4 @@
-# Lab1
+# Debug lab1
 ## Lab objective
 Dealing with gbd.
 
