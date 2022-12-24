@@ -189,14 +189,14 @@ OUTPUT(bin/pressure_controller_system.elf elf32-littlearm)
  .debug_aranges
                 0x000000c0       0x20 obj/Startup.o
 
-.debug_line     0x00000000      0x498
+.debug_line     0x00000000      0x496
  .debug_line    0x00000000       0x6a obj/alarm.o
  .debug_line    0x0000006a       0x74 obj/alarm_monitor.o
  .debug_line    0x000000de       0x75 obj/driver.o
- .debug_line    0x00000153       0xc7 obj/main.o
- .debug_line    0x0000021a       0x97 obj/main_program.o
- .debug_line    0x000002b1       0xa5 obj/pressure_sensor.o
- .debug_line    0x00000356      0x142 obj/Startup.o
+ .debug_line    0x00000153       0xc5 obj/main.o
+ .debug_line    0x00000218       0x97 obj/main_program.o
+ .debug_line    0x000002af       0xa5 obj/pressure_sensor.o
+ .debug_line    0x00000354      0x142 obj/Startup.o
 
 .debug_str      0x00000000      0x4a3
  .debug_str     0x00000000      0x1f6 obj/alarm.o

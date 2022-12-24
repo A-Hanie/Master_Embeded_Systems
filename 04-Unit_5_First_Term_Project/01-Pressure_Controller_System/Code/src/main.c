@@ -1,6 +1,3 @@
-// #include <stdint.h>
-// #include <stdio.h>
-
 #include "../include/driver.h"
 #include "../include/state.h"
 #include "../include/alarm.h"
