@@ -1,4 +1,4 @@
-# Lab2
+# Lab1
 
 
 ![](media/Lab1.gif)
